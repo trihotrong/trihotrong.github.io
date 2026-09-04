@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ho Trọng Trí | Portfolio</title>
-    <!-- Font Inter & Fira Code từ Google Fonts -->
+    <title>Ho Trong Tri | Portfolio</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         :root {
             --bg-base: #0b0f19;
@@ -49,7 +49,7 @@
             margin: 0 auto;
         }
 
-        /* HEADER SECTION */
+        /* HEADER */
         header {
             margin-bottom: 36px;
             padding-bottom: 24px;
@@ -142,7 +142,7 @@
         }
 
         h2 {
-            font-size: 1.2rem;
+            font-size: 1.15rem;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.05em;
@@ -159,14 +159,30 @@
             color: #818cf8;
         }
 
-        p {
+        .sub-header {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
             color: var(--text-sub);
-            font-size: 0.98rem;
+            font-size: 0.95rem;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        li:last-child {
+            margin-bottom: 0;
         }
 
         /* SKILLS BADGES */
         .skills-group {
-            margin-bottom: 18px;
+            margin-bottom: 16px;
         }
 
         .skills-group:last-child {
@@ -216,8 +232,8 @@
             transform: scale(1.05);
         }
 
-        /* PROJECT CARDS */
-        .project-card {
+        /* CARDS (PROJECTS & ACTIVITIES) */
+        .card-item {
             background: rgba(255, 255, 255, 0.02);
             border: 1px solid var(--border-color);
             border-radius: 12px;
@@ -226,17 +242,17 @@
             transition: all 0.25s ease;
         }
 
-        .project-card:last-child {
+        .card-item:last-child {
             margin-bottom: 0;
         }
 
-        .project-card:hover {
+        .card-item:hover {
             background: var(--bg-card-hover);
             border-color: rgba(129, 140, 248, 0.4);
             transform: translateY(-2px);
         }
 
-        .project-header {
+        .card-header {
             display: flex;
             justify-content: space-between;
             align-items: baseline;
@@ -245,23 +261,23 @@
             gap: 8px;
         }
 
-        .project-title {
+        .card-title {
             font-size: 1.05rem;
             font-weight: 700;
             color: var(--text-main);
         }
 
-        .project-tag {
+        .card-tag {
             font-size: 0.75rem;
             color: #818cf8;
             font-family: 'Fira Code', monospace;
         }
 
-        .project-tech {
+        .card-tech {
             font-size: 0.82rem;
             color: #38bdf8;
             font-family: 'Fira Code', monospace;
-            margin-bottom: 10px;
+            margin-bottom: 12px;
         }
 
         footer {
@@ -281,20 +297,34 @@
                 <span class="status-dot"></span> Open to Capstone & Learning
             </div>
             <h1>Ho Trọng Trí</h1>
-            <p class="role">Third-year Computer Science Student • HCMUT (OISP)</p>
+            <p class="role">Undergraduate Student in Computer Science • HCMUT</p>
             <div class="links">
-                <a href="mailto:tri.ho1803@hcmut.edu.vn" class="btn-link">✉ Email</a>
-                <a href="https://github.com/trihotrong" target="_blank" class="btn-link">⌥ GitHub</a>
-                <a href="tel:+84798230230" class="btn-link">☏ 0798 230 230</a>
+                <a href="mailto:tri.ho1803@hcmut.edu.vn" class="btn-link">✉ tri.ho1803@hcmut.edu.vn</a>
+                <a href="https://github.com/trihotrong" target="_blank" class="btn-link">⌥ github.com/trihotrong</a>
+                <a href="tel:+84798230230" class="btn-link">☏ +84 798 230 230</a>
             </div>
         </header>
 
-        <!-- SUMMARY -->
+        <!-- SUMMARY & OBJECTIVE -->
         <section>
-            <h2>About & Mindset</h2>
-            <p>
-                Sinh viên năm 3 ngành Khoa học Máy tính với nền tảng lập trình căn bản và học lực ở mức khá. Chưa có nhiều hoạt động ngoại khóa hay dự án thực chiến, nhưng luôn giữ tinh thần trách nhiệm cao, chịu khó và sẵn sàng học hỏi công nghệ mới khi tham gia các bài tập lớn và định hướng làm Đồ án tốt nghiệp theo mảng Applied AI.
-            </p>
+            <h2>Summary & Objective</h2>
+            <div class="sub-header">Academic Background & Learning Mindset</div>
+            <ul>
+                <li>Third-year Computer Science student with solid core fundamentals and an average academic standing.</li>
+                <li>While lacking extensive extracurricular activities, I possess high responsibility, diligence, and an eagerness to learn new technologies in team projects.</li>
+            </ul>
+        </section>
+
+        <!-- EDUCATION -->
+        <section>
+            <h2>Education</h2>
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Undergraduate Student in Computer Science</div>
+                    <span class="card-tag">2022 – Now</span>
+                </div>
+                <div class="card-tech">Ho Chi Minh City University of Technology (HCMUT)</div>
+            </div>
         </section>
 
         <!-- TECHNICAL SKILLS -->
@@ -302,29 +332,27 @@
             <h2>Technical Skills</h2>
             
             <div class="skills-group">
-                <div class="skills-group-title">Programming Languages</div>
+                <div class="skills-group-title">Languages</div>
                 <div class="badge-list">
                     <span class="badge">Python</span>
-                    <span class="badge">C / C++</span>
-                    <span class="badge">SQL (PostgreSQL / MySQL)</span>
+                    <span class="badge">C++</span>
+                    <span class="badge">SQL</span>
                 </div>
             </div>
 
             <div class="skills-group">
-                <div class="skills-group-title">Libraries & Frameworks</div>
+                <div class="skills-group-title">Tools & Development</div>
                 <div class="badge-list">
-                    <span class="badge purple">OpenCV</span>
-                    <span class="badge purple">MediaPipe</span>
-                    <span class="badge purple">Applied AI Basics</span>
+                    <span class="badge purple">VS Code</span>
+                    <span class="badge purple">GitHub</span>
                 </div>
             </div>
 
             <div class="skills-group">
-                <div class="skills-group-title">Tools & Environment</div>
+                <div class="skills-group-title">Environments</div>
                 <div class="badge-list">
-                    <span class="badge slate">Git / GitHub</span>
-                    <span class="badge slate">VS Code</span>
-                    <span class="badge slate">Linux / Windows</span>
+                    <span class="badge slate">Windows</span>
+                    <span class="badge slate">Linux basics</span>
                 </div>
             </div>
         </section>
@@ -333,27 +361,52 @@
         <section>
             <h2>Academic Projects</h2>
             
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-title">E-Commerce Database Architecture</div>
-                    <span class="project-tag">Coursework</span>
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">E-Commerce Database System</div>
+                    <span class="card-tag">Coursework</span>
                 </div>
-                <div class="project-tech">Tech stack: SQL, PostgreSQL, Git</div>
-                <p>Thiết kế lược đồ ERD gồm 15 thực thể, chuẩn hóa dữ liệu, xây dựng các ràng buộc toàn vẹn và viết truy vấn, trigger hỗ trợ xử lý giao dịch đơn hàng.</p>
+                <div class="card-tech">Database Systems Coursework | SQL, PostgreSQL, Git</div>
+                <ul>
+                    <li>Designed an ERD schema with 15 entities ensuring data integrity and normalization.</li>
+                    <li>Wrote SQL queries, views, and basic triggers to handle order processing workflows.</li>
+                    <li>Collaborated with team members using Git for version control.</li>
+                </ul>
             </div>
 
-            <div class="project-card">
-                <div class="project-header">
-                    <div class="project-title">Operating System Utilities</div>
-                    <span class="project-tag">Coursework</span>
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Operating System Utilities</div>
+                    <span class="card-tag">Coursework</span>
                 </div>
-                <div class="project-tech">Tech stack: C/C++, Linux Shell</div>
-                <p>Lập trình các tiện ích cơ bản tương tác hệ thống, tìm hiểu cơ chế quản lý tiến trình (process), đa luồng và lệnh shell trong môi trường Linux.</p>
+                <div class="card-tech">Operating Systems Coursework | C/C++, Linux</div>
+                <ul>
+                    <li>Implemented basic programs demonstrating process management, threads, and system calls.</li>
+                    <li>Practiced compiling and debugging code in a Linux command-line environment.</li>
+                    <li>Completed coursework assignments and documentation on schedule.</li>
+                </ul>
             </div>
         </section>
 
+        <!-- ACTIVITIES -->
+        <section>
+            <h2>Activities</h2>
+            <div class="card-item">
+                <div class="card-header">
+                    <div class="card-title">Volunteer – CSE Connection</div>
+                    <span class="card-tag">Extracurricular</span>
+                </div>
+                <div class="card-tech">Faculty of Computer Science & Engineering (HCMUT)</div>
+                <ul>
+                    <li>Supported logistics, equipment setup, and attendee coordination for faculty networking events.</li>
+                    <li>Collaborated with team members to ensure smooth operations and professional support for guest speakers and students.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
         <footer>
-            <p>© 2026 Ho Trọng Trí • Built with HTML & CSS • Deployed on GitHub Pages</p>
+            <p>© 2026 Ho Trọng Trí • Deployed on GitHub Pages</p>
         </footer>
     </div>
 </body>
